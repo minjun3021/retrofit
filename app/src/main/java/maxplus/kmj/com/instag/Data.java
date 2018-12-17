@@ -1,9 +1,20 @@
 package maxplus.kmj.com.instag;
 
+import java.util.ArrayList;
+
 public class Data {
     private int status;
     private int count;
-    private TenData d1;
+
+    public ArrayList<TwoData> getData() {
+        return data;
+    }
+
+    public void setData(ArrayList<TwoData> data) {
+        this.data = data;
+    }
+
+    private ArrayList<TwoData> data;
 
     public int getStatus() {
         return status;
@@ -21,11 +32,5 @@ public class Data {
         this.count = count;
     }
 
-    public TenData getD1() {
-        return d1;
-    }
 
-    public void setD1(TenData d1) {
-        this.d1 = d1;
-    }
 }

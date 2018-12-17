@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                         .enqueue(new Callback<Data>() {
                             @Override
                             public void onResponse(Call<Data> call, Response<Data> response) {
-                                Log.e("response",String.valueOf(response.body().getCount()));
+                                Log.e("response",response.body().getData().get(0).getName());
                             }
 
                             @Override
